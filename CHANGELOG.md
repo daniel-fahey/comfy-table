@@ -6,6 +6,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## [8.0.1] - unreleased
 
+### Fix
+
+- Fixed broken column layout in zero-width terminal environments (e.g. Nix build sandbox). [#210](https://github.com/Nukesor/comfy-table/pull/210)
+
 ## [8.0.0] - 05.08.2026
 
 ### Breaking Changes
@@ -62,7 +66,6 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 - Fixed a non-critical bug that resulted in less-than optimal layouting when UTF-8 characters were involved.
 - No longer panic when rendering a `Table` that contains a row with `Row::max_height(0)`.
 - Don't print multi-width truncation indicators, if they would be longer than the column.
-
 ## [7.2.2] - 2026-01-13
 
 ### Fix
